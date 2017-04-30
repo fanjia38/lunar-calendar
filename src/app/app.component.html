@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <span>{{title}}</span>
+</md-toolbar>
+
+<main>
+  <app-input-form (submit)="submit($event)"></app-input-form>
+  <p>{{ message }}</p>
+</main>
+
+<footer>
+  <p>作成 @38fanjia <a href="http://twitter.com/38fanjia">Twitter</a></p>
+</footer>
