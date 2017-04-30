@@ -33,20 +33,20 @@ export class AppComponent {
         year: lunar.lYear,
         month: lunar.lMonth,
         day: lunar.lDay
-      }
+      };
     } else {
       this.lunarDate = undefined;
     }
   }
 
   calclunar2solar() {
-    if (typeof this.lunarDate !== 'undefined' && this.lunarDate.year != 2017) {
+    if (typeof this.lunarDate !== 'undefined' && this.lunarDate.year !== 2017) {
       const solar = solarLunar.lunar2solar(2017, this.lunarDate.month, this.lunarDate.day);
       this.nextDate = {
         year: solar.cYear,
         month: solar.cMonth,
         day: solar.cDay
-      }
+      };
     } else {
       this.calclunar2solar = undefined;
     }
