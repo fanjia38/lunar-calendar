@@ -22,7 +22,7 @@ export class AppComponent {
   submit(date: FormatDate) {
     this.solarDate = date;
     this.calcSolar2Lunar();
-    this.calclunar2solar();
+    this.calcLunar2solar();
     this.setMessage();
   }
 
@@ -39,7 +39,7 @@ export class AppComponent {
     }
   }
 
-  calclunar2solar() {
+  calcLunar2solar() {
     if (typeof this.lunarDate !== 'undefined' && this.lunarDate.year !== 2017) {
       const solar = solarLunar.lunar2solar(2017, this.lunarDate.month, this.lunarDate.day);
       this.nextDate = {
@@ -48,7 +48,7 @@ export class AppComponent {
         day: solar.cDay
       };
     } else {
-      this.calclunar2solar = undefined;
+      this.nextDate = undefined;
     }
   }
 
