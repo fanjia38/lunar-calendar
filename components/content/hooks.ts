@@ -27,9 +27,6 @@ const useCalendar = () => {
         return `今年の旧暦${solarDateObject.lMonth}月${solarDateObject.lDay}は、${solarDateObject.cYear}年${solarDateObject.cMonth}月${solarDateObject.cDay}日です。`
     }, [solarDateObject])
 
-    console.log(lunarDateObject)
-    console.log(solarDateObject)
-
     return {
         selectDate,
         lunarMessage,
