@@ -3,7 +3,7 @@ import { AppProps } from 'next/app'
 
 const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
   return (
-    <ChakraProvider >
+    <ChakraProvider>
       <Component {...pageProps} />
     </ChakraProvider>
   )
