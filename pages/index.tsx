@@ -12,7 +12,7 @@ const Index = () => {
             <Content />
             <Container marginTop="8" p="4" border="1px solid #364f53" borderRadius="8px">
                 <Text fontSize="sm">
-                    これは、中国の太陰太陽暦を計算するためのライブラリを使用しているため、日本の天保暦や新暦旧暦の対照表とは異なる結果が表示される可能性があります。
+                    これは、中国の太陰太陽暦を計算するためのライブラリを使用しているため、日本の天保暦や新暦旧暦の対照表とは異なる日付が表示される可能性があります。
                 </Text>
             </Container>
         </Box>
