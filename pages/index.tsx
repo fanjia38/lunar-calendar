@@ -1,5 +1,5 @@
 import { Box, Container, Heading, Text } from "@chakra-ui/react"
-import Content from '../components/content'
+import Content from '../src/components/content'
 
 
 const Index = () => {
