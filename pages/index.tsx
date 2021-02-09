@@ -22,4 +22,5 @@ const Index = (): React.ReactElement => {
     </Box>
   )
 }
+
 export default Index

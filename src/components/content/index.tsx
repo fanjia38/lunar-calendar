@@ -35,4 +35,5 @@ const Content = (): ReactElement => {
     </Box>
   )
 }
+
 export default Content
