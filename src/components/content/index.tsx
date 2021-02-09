@@ -1,8 +1,8 @@
-import { ChangeEvent } from 'react'
+import { ChangeEvent, ReactElement } from 'react'
 import { Box, Text, Input } from "@chakra-ui/react"
 import { useCalendar } from './hooks'
 
-const Content = () => {
+const Content = (): ReactElement => {
     const { selectDate, lunarMessage, solarMessage, setSelectDate } = useCalendar()
 
     const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => setSelectDate(event.target.value)

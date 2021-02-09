@@ -1,8 +1,7 @@
 import { Box, Container, Heading, Text } from "@chakra-ui/react"
 import Content from '../src/components/content'
 
-
-const Index = () => {
+const Index = (): React.ReactElement => {
     return (
         <Box height="100vh" backgroundColor="#caaca7" color="#364f53">
             <Box backgroundColor="#364f53" color="#caaca7" p="4">
