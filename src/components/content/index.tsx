@@ -10,10 +10,8 @@ const Content = (): ReactElement => {
     setSelectDate
   } = useCalendar()
 
-  const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log('select date =>', event.target.value)
+  const handleOnChange = (event: ChangeEvent<HTMLInputElement>) =>
     setSelectDate(event.target.value)
-  }
 
   return (
     <Box p='4'>
