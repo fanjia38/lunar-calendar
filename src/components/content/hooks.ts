@@ -40,6 +40,9 @@ export const useCalendar = (): useCalendarReturnType => {
     return `今年の旧暦${solarDateObject.lMonth}月${solarDateObject.lDay}は、${solarDateObject.cYear}年${solarDateObject.cMonth}月${solarDateObject.cDay}日です。`
   }, [solarDateObject])
 
+  console.log('lunarDateObject:', lunarDateObject)
+  console.log('solarDateObject:', solarDateObject)
+
   return {
     selectDate,
     lunarMessage,
