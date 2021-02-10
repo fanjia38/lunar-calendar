@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import { Dispatch, SetStateAction } from 'react'
-import solarLunar from 'solarLunar'
+import solarlunar from 'solarlunar'
 import { format, addYears, getYear, getMonth, getDate } from 'date-fns'
 
 interface useCalendarReturnType {
@@ -21,11 +21,11 @@ export const useCalendar = (): useCalendarReturnType => {
     const month = getMonth(dateTime) + 1
     const date = getDate(dateTime)
 
-    return solarLunar.solar2lunar(year, month, date)
+    return solarlunar.solar2lunar(year, month, date)
   }, [selectDate])
 
   const solarDateObject = useMemo(() => {
-    return solarLunar.lunar2solar(
+    return solarlunar.lunar2solar(
       getYear(new Date()),
       lunarDateObject.lMonth,
       lunarDateObject.lDay

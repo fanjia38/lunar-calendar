@@ -2,9 +2,9 @@
  * solarLunar
  * https://github.com/yize/solarlunar
  */
-declare module 'solarLunar' {
+declare module 'solarlunar' {
   // 使用する値のみ定義
-  interface solarLunarObj {
+  interface solarlunarObj {
     cDay: number
     cMonth: number
     cYear: number
@@ -13,6 +13,6 @@ declare module 'solarLunar' {
     lYear: number
   }
 
-  export const solar2lunar: (y: number, m: number, d: number) => solarLunarObj
-  export const lunar2solar: (y: number, m: number, d: number) => solarLunarObj
+  export const solar2lunar: (y: number, m: number, d: number) => solarlunarObj
+  export const lunar2solar: (y: number, m: number, d: number) => solarlunarObj
 }
