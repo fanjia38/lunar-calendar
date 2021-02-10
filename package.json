@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
+    "export": "NODE_ENV=production next export",
     "start": "next start",
     "type-check": "tsc -p .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
