@@ -9,9 +9,7 @@
     "start": "next start",
     "type-check": "tsc -p .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint --fix './{pages,src,styles}/**/*.{ts,tsx}'",
-    "prettier": "prettier-standard --write './{pages,src,styles}/**/*.{ts,tsx}'",
-    "format": "yarn lint:fix && yarn prettier"
+    "lint:fix": "eslint --fix './{pages,src,styles}/**/*.{ts,tsx}'"
   },
   "private": true,
   "dependencies": {
@@ -35,7 +33,7 @@
     "eslint-plugin-react": "^7.22.0",
     "husky": "^5.0.9",
     "lint-staged": "^10.5.4",
-    "prettier-standard": "^16.4.1",
+    "prettier": "^3.0.0",
     "solarlunar": "^2.0.7",
     "typescript": "^4.1.3"
   },
