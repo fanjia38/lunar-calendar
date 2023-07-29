@@ -11,7 +11,7 @@ interface useCalendarReturnType {
 }
 export const useCalendar = (): useCalendarReturnType => {
   const [selectDate, setSelectDate] = useState(
-    format(addYears(new Date(), -20), 'yyyy-MM-dd')
+    format(addYears(new Date(), -20), 'yyyy-MM-dd'),
   )
 
   const lunarDateObject = useMemo(() => {
@@ -28,7 +28,7 @@ export const useCalendar = (): useCalendarReturnType => {
     return solarlunar.lunar2solar(
       getYear(new Date()),
       lunarDateObject.lMonth,
-      lunarDateObject.lDay
+      lunarDateObject.lDay,
     )
   }, [lunarDateObject])
 
@@ -44,6 +44,6 @@ export const useCalendar = (): useCalendarReturnType => {
     selectDate,
     lunarMessage,
     solarMessage,
-    setSelectDate
+    setSelectDate,
   }
 }
